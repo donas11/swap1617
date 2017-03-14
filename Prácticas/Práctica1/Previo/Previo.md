@@ -38,6 +38,7 @@ service apache2 restart
 ~~~
 
   * Interfaces de redes en el contenedor
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/3.png)
 
   * En la máquina host(anfitriona) en un navegador web
