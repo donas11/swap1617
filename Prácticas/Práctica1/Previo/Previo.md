@@ -1,5 +1,5 @@
 # Pruebas previas con Docker
-## Iniciamos un contenedor con una imagen de ubuntu básica y asignado al puerto 80 al puerto 1111 [^nota1] del host (Instalación por pasos) 
+## Iniciamos un contenedor con una imagen de ubuntu básica y asignado al puerto 80 al puerto 1111 [^puerto] del host (Instalación por pasos) 
 ~~~
 sudo docker run -d -p 1111:80 -i -t --name server1 ubuntu bash
 ~~~
@@ -50,7 +50,7 @@ http://172.17.0.1:1111/hola.html
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/4.png)
 
-##  Iniciamos un contenedor con una imagen de ubuntu con servidor ya instalado y asignando los puertos 80 y 22 al puerto 10306 y al 10022 [^2] del host 
+##  Iniciamos un contenedor con una imagen de ubuntu con servidor ya instalado y asignando los puertos 80 y 22 al puerto 10306 y al 10022 [^puertos] del host 
  
  * El contenedor contiene ya LAMP instalado  
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/5.png)
@@ -60,8 +60,8 @@ http://172.17.0.1:1111/hola.html
 
 
 ***
-[^1]: Se ha utilizado el puerto 1111, se puede cambiar a otro distinto disponible en la máquina host.
-[^2]: Se han utilizado los puertos 10306 y 10022, se pueden cambiar a otros disponibles en la máquina anfitriona.
+[^puerto]: Se ha utilizado el puerto 1111, se puede cambiar a otro distinto disponible en la máquina host.
+[^puertos]: Se han utilizado los puertos 10306 y 10022, se pueden cambiar a otros disponibles en la máquina anfitriona.
 
 
 
