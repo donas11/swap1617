@@ -1,6 +1,5 @@
 # Pruebas previas con Docker
-## Iniciar contenedores 
-* Iniciamos un contenedor con una imagen de ubuntu básica y asignado al puerto 80 al puerto 1111 del host (Instalación por pasos) 
+## Iniciamos un contenedor con una imagen de ubuntu básica y asignado al puerto 80 al puerto 1111 del host (Instalación por pasos) 
 ~~~
 sudo docker run -d -p 1111:80 -i -t --name server1 ubuntu bash
 ~~~
