@@ -50,8 +50,13 @@ http://172.17.0.1:1111/hola.html
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/4.png)
 
-
-
+##  Iniciamos un contenedor con una imagen de ubuntu con servidor ya instalado y asignado los puerto 80 y 22 al puerto 10306 y al 10022 del host 
+ 
+ * El contenedor contiene ya LAMP instalado  
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/5.png)
+ 
+ * y comprobamos que funciona el servidor y hay conexión
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/Previo/6.png)
 
 
 
