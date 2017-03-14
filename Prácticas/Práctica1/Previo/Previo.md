@@ -5,8 +5,9 @@
 sudo docker run -d -p 1111:80 -i -t --name server1 ubuntu bash
 ~~~
 
-![img](https://github.com/amdnr/swap1617/Prácticas/Práctica1/Previo/1.png)
-![img](https://github.com/amdnr/swap1617/Prácticas/Práctica1/Previo/2.png)
+![img](https://github.com/amdnr/swap1617/blob/master//Prácticas/Práctica1/Previo/1.png)
+
+![img](https://github.com/amdnr/swap1617/blob/master//Prácticas/Práctica1/Previo/2.png)
 
   * Actualizamos los repositorios
 ~~~
@@ -37,7 +38,7 @@ service apache2 restart
 ~~~
 
   * Interfaces de redes en el contenedor
-![img](https://github.com/amdnr/swap1617/Prácticas/Práctica1/Previo/3.png)
+![img](https://github.com/amdnr/swap1617/blob/master/Prácticas/Práctica1/Previo/3.png)
 
   * En la máquina host(anfitriona) en un navegador web
 ~~~
@@ -47,7 +48,7 @@ http://172.17.0.1:1111/hola.html
 
   *  y comprobamos que funciona el servidor y hay conexión
 
-![img](https://github.com/amdnr/swap1617/Prácticas/Práctica1/Previo/4.png)
+![img](https://github.com/amdnr/swap1617/blob/master//Prácticas/Práctica1/Previo/4.png)
 
 
 
