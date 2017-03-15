@@ -61,6 +61,7 @@ http://172.17.0.1:1111/hola.html
 
 ***
 <sup>1</sup>: Se ha utilizado el puerto 1111, se puede cambiar a otro distinto disponible en la máquina host.
+
 <sup>2</sup>: Se han utilizado los puertos 10306 y 10022, se pueden cambiar a otros disponibles en la máquina anfitriona.
 
 
