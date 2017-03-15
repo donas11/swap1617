@@ -1,4 +1,5 @@
-# Resultados de ejecutar los comandos
+# Práctica 1
+## Resultados de ejecutar los comandos
 apache2 -v
 ~~~
 Server version: Apache/2.4.18 (Ubuntu)
@@ -17,5 +18,5 @@ www-data    50  0.0  0.1 258280  5740 ?        S    13:38   0:00 /usr/sbin/apach
 root        53  0.0  0.0  11284   880 ?        S+   13:39   0:00 grep --color=auto apache
 ~~~
 
-# Captura de patalla
+## Captura de patalla
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/apachefuncionando.png)
