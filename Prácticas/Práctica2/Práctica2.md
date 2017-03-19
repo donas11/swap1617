@@ -58,22 +58,3 @@ al cabo de una hora se copia en el servidor dos
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
 
 
-
-
-En el servidor 2
-
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/2.png)
-
-
-
-y en el archivo etc/ssh/sshd_config la opción PermitRootLogin 
- permitimos el uso de root por ssh que cambiando el parámetro por defecto de "prohibited-password" 
- 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/3.png)
-
-a "yes"
-
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/4.png)
-
-sin embargo en el contenedor que viene instalado por defecto LAMP esta configurado a "yes" por lo tanto no hay que modificarlo 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/5.jpg)
