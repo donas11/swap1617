@@ -6,7 +6,6 @@
 ## Vamos a copiar la carpeta /var/ entre las dos máquinas
 
   * enviamos a la máquina 2 comprimida la carpeta
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/2.png)
 
   * descomprimimos la carpeta y ya tenemos un clon de la carpeta de la máquina 1
@@ -19,11 +18,9 @@
 * generamos las claves privadas y públicas.
 
   * con dss:
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5dss.png)
 
   * o con rsa:
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
 
 * Copiamos la clave pública
@@ -43,19 +40,15 @@
 crontab -e
 ~~~
   * y añadimos con el editor de textos una nueva linea de la siguiente forma:
-  
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/8.png)
 
   * reiniciamos el servicio cron
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
 
   * comprobamos que un archivo de prueba en el servidor uno
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
 
   * a la hora se copia en el servidor dos
-
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
 
 
