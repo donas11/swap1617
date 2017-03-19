@@ -20,13 +20,14 @@
 
   * con dss:
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5dss.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5dss.png)
 
   * o con rsa:
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
 
   * Copiamos la clave pública
+  
   * si es dss:
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6dss.png)
 
