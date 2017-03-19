@@ -18,9 +18,11 @@
 * generamos las claves privadas y públicas.
 
   * con dss:
+
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5dss.png)
 
   * o con rsa:
+
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
 
 * Copiamos la clave pública
@@ -43,12 +45,13 @@ crontab -e
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/8.png)
 
   * reiniciamos el servicio cron
-  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
+	  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
 
   * comprobamos que un archivo de prueba en el servidor uno
-  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
+	  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
 
   * a la hora se copia en el servidor dos
+
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
 
 
