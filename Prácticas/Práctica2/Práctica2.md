@@ -6,6 +6,7 @@ Probamos a copiar un archivo por ssh desde la máquina principal
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/1.png)
 
 vamos a copiar la carpeta var entre las dos máquinas
+
 enviamos a la máquina 2 comprimida la carpeta
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/2.png)
