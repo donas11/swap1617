@@ -24,15 +24,16 @@
 
   * o con rsa:
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
 
-  * Copiamos la clave pública
+* Copiamos la clave pública
   
   * si es dss:
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6dss.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6dss.png)
 
   * si es rsa:
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6rsa.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6rsa.png)
+
   * y comprobamos que podemos acceder mediante ssh sin necesidad de introducir contraseña
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/7.png)
 
