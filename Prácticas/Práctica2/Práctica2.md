@@ -7,13 +7,13 @@
 
   * enviamos a la máquina 2 comprimida la carpeta
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/2.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/2.png)
 
   * descomprimimos la carpeta y ya tenemos un clon de la carpeta de la máquina 1
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/3.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/3.png)
 
   * o también podría hacerse con la herramienta rsync y tendríamos también una clonación de la carpeta /var/www/
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/4.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/4.png)
 
 ## Para configurar el ssh para acceder sin que solicite contraseña entre estas dos máquinas 
 * generamos las claves privadas y públicas.
@@ -43,18 +43,19 @@
 crontab -e
 ~~~
   * y añadimos con el editor de textos una nueva linea de la siguiente forma:
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/8.png)
+  
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/8.png)
 
   * reiniciamos el servicio cron
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
 
   * comprobamos que un archivo de prueba en el servidor uno
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
 
   * a la hora se copia en el servidor dos
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
 
 
