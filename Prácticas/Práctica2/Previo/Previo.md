@@ -24,7 +24,7 @@ y en el archivo etc/ssh/sshd_config la opción PermitRootLogin
 
 a "yes"
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica1/4.png)
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/4.png)
 
 sin embargo en el contenedor que viene instalado por defecto LAMP esta configurado a "yes" por lo tanto no hay que modificarlo 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/5.jpg)
