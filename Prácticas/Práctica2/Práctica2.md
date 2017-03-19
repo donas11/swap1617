@@ -3,7 +3,7 @@
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/1.png)
 
-## Vamos a copiar la carpeta var entre las dos máquinas
+## Vamos a copiar la carpeta /var/ entre las dos máquinas
 
   * enviamos a la máquina 2 comprimida la carpeta
 
