@@ -34,6 +34,7 @@ si es rsa:
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6rsa.png)
 y comprobamos que podemos acceder mediante ssh sin necesidad de introducir contraseña
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/7.png)
+
 Para establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas
 ejecutamos 
 ~~~
@@ -41,11 +42,17 @@ crontab -e
 ~~~
 y añadimos con el editor de textos una nueva linea de la siguiente forma:
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/8.png)
+
 reiniciamos el servicio cron
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
+
 comprobamos que un archivo de prueba en el servidor uno
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
+
 al cabo de una hora se copia en el servidor dos
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/11.png)
 
 
