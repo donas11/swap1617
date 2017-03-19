@@ -34,7 +34,7 @@
   * si es rsa:
   ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/6rsa.png)
 
-  * y comprobamos que podemos acceder mediante ssh sin necesidad de introducir contraseña
+* y comprobamos que podemos acceder mediante ssh sin necesidad de introducir contraseña
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/7.png)
 
 ## Para establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas
