@@ -18,9 +18,11 @@ o también podría hacerse con la herramienta rsync y tendríamos también una c
 
 Para configurar el ssh para acceder sin que solicite contraseña entre estas dos máquinas 
 generamos las claves privadas y públicas 
-con dss
+con dss:
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5dss.png)
-o con rsa
+o con rsa:
+
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/5rsa.png)
 
 Copiamos la clave pública
