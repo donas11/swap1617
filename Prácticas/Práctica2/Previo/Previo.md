@@ -19,7 +19,7 @@ En el servidor 2
 
 y en el archivo etc/ssh/sshd_config la opción PermitRootLogin 
  permitimos el uso de root por ssh que cambiando el parámetro por defecto de "prohibited-password" 
-
+ 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/Previo/3.png)
 
 a "yes"
