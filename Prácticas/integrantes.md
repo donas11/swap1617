@@ -1,3 +1,3 @@
-# Prácticas realizadas por:
-##  [donas11](https://github.com/donas11)
+# Práctcas realizadas por:
 ##  [alguacilaguamara](https://github.com/alguacilaguamara)
+##  [donas11](https://github.com/donas11)
