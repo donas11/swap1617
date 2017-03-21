@@ -46,7 +46,7 @@ crontab -e
 
   * reiniciamos el servicio cron
 	
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
+  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/9.png)
 
   * comprobamos que un archivo de prueba en el servidor uno
 	  ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica2/10.png)
