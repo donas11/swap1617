@@ -61,19 +61,19 @@
 		* As = Ac<sub>n-1</sub> + ( (1 – Ac<sub>n-1</sub>) * Ac<sub>n</sub> )
 		* As = Ac<sub>1</sub> + ( (1 – Ac<sub>1</sub>) * Ac<sub>2</sub> )
 	* En cada subsistema (específico) 
-		* As<sub>3web</sub>=97.75% + ((1 -97.75%) x 85%)=99.6625%
-		* As<sub>3app</sub>=99% + ((1 -99%) x 90%)=99.9%
-		* As<sub>3BD</sub>=99.9999% +( (1 -99.9999%) x 99.9%)=99.9999999%
-		* As<sub>3DNS</sub>=99.96% + ((1 -99.96%) x 98%)=99.9992%
-		* As<sub>3FireWall</sub>=97.75% +( (1 -97.75%) x 85%)=99.6625%
-		* As<sub>3Switch</sub>=99.99% + ((1 -99.99%) x 99%)= 99.9999%	
-		* As<sub>3DataCenter</sub>=99.99%
-		* As<sub>3ISP</sub>=99.75% + ((1 -99.75%) x 95%)=99.875%		
+		* As<sub>3web</sub> = 97.75% + ((1 -97.75%) x 85%)=99.6625%
+		* As<sub>3app</sub> = 99% + ((1 -99%) x 90%)=99.9%
+		* As<sub>3BD</sub> = 99.9999% +( (1 -99.9999%) x 99.9%)=99.9999999%
+		* As<sub>3DNS</sub> = 99.96% + ((1 -99.96%) x 98%)=99.9992%
+		* As<sub>3FireWall</sub> = 97.75% +( (1 -97.75%) x 85%)=99.6625%
+		* As<sub>3Switch</sub> = 99.99% + ((1 -99.99%) x 99%)= 99.9999%	
+		* As<sub>3DataCenter</sub> = 99.99%
+		* As<sub>3ISP</sub> = 99.75% + ((1 -99.75%) x 95%)=99.875%		
 	* En Total
-		* As<sub>3Total</sub> =99.6625% x 99.9% x 99.9999999% x 99.9992% x 99.6625% x 99.9999% x 99.99% x 99.9875%	
-		* As<sub>3Total</sub>=99.2035%
-		* A<sub>(1->3)mejora</sub>=39.3335%
-		* A<sub>(2->3)mejora</sub>=4.9035 %
+		* As<sub>3Total</sub> = 99.6625% x 99.9% x 99.9999999% x 99.9992% x 99.6625% x 99.9999% x 99.99% x 99.9875%	
+		* As<sub>3Total</sub> = 99.2035%
+		* A<sub>(1->3)mejora</sub> = 39.3335%
+		* A<sub>(2->3)mejora</sub> = 4.9035 %
 
 
 ##  Ejercicio 2.2: Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad. Como ejemplo, examina [PM2](https://github.com/Unitech/pm2) que sirve para administrar clústeres de NodeJS. 
