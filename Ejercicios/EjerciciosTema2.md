@@ -1,33 +1,32 @@
 # Ejercicios Tema 2
 
 ## Ejercicio 2.1 Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema). 
+
 * Disponibilidades iniciales 
+	<table summary="Disponibilidad del sistema">
+	 	<thead>
+			<tr>
+			<th scope="col">Número</th>
+			<th scope="col">Componente</th>
+		   <th scope="col">Disponibilidad</th>
+		   </tr>
+	       </thead>
+	       <tbody>
+		<tr>
+		  <td>Table data 1</td>
+		  <td>Table data 2</td>
+		</tr>
+		 <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
+		   <tr><td>2 </td><td> Aplicación   </td><td> 90% </td> </tr>
+		   <tr><td>3 </td><td> Base de datos   </td><td>99.9% </td> </tr>
+		   <tr><td>4 </td><td> DNS   </td><td> 98%  </td> </tr>
+		   <tr><td>5 </td><td> Cortafuegos   </td><td> 85% </td> </tr>
+		   <tr><td>6 </td><td> Switch   </td><td> 99% </td> </tr>
+		   <tr><td>7</td><td> centro de datos  </td><td> 99.99%  </td> </tr>
+		   <tr><td>8</td><td> Proveedor de Servicios de Internet  </td><td> 95% </td> </tr>
+	      </tbody>
+	</table>
 
-<table summary="Disponibilidad del sistema">
-  <thead>
-    <tr>
-      <th scope="col">Número</th>
-      <th scope="col">Componente</th>
-      <th scope="col">Disponibilidad</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Table data 1</td>
-      <td>Table data 2</td>
-    </tr>
-     <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
-	   <tr><td>2 </td><td> Aplicación   </td><td> 90% </td> </tr>
-	   <tr><td>3 </td><td> Base de datos   </td><td>99.9% </td> </tr>
-	   <tr><td>4 </td><td> DNS   </td><td> 98%  </td> </tr>
-	   <tr><td>5 </td><td> Cortafuegos   </td><td> 85% </td> </tr>
-	   <tr><td>6 </td><td> Switch   </td><td> 99% </td> </tr>
-	   <tr><td>7</td><td> centro de datos  </td><td> 99.99%  </td> </tr>
-	   <tr><td>8</td><td> Proveedor de Servicios de Internet  </td><td> 95% </td> </tr>
-
-</tbody>
-</table>
 
  	* Disponibilidad del servidor :  
 		As = Ac<sub>1</sub>  x Ac<sub>2</sub>  x Ac<sub>3</sub>  x Ac<sub>4</sub>  x Ac<sub>5</sub>  x Ac<sub>6</sub>  x Ac<sub>7</sub> x Ac<sub>8</sub>
