@@ -34,8 +34,8 @@
 </table>
 
  	* Disponibilidad del servidor :  
-		As = Ac<sub>1</sub>  * Ac~2~  * Ac~3~  * Ac~4~  * Ac~5~  * Ac~6~  * Ac~7~ * Ac~8~ 
-		As = 85% * 90% * 99.9% * 98% * 85% * 99% * 99.99% * 95% = 59.87%
+		As = Ac<sub>1</sub>  x Ac<sub>2</sub>  x Ac<sub>3</sub>  x Ac<sub>4</sub>  x Ac<sub>5</sub>  x Ac<sub>6</sub>  x Ac<sub>7</sub> x Ac<sub>8</sub>
+		As = 85% x 90% x 99.9% x 98% x 85% x 99% x 99.99% x 95% = 59.87%
 
 * Con 2 elementos en cada subsistema 
 
