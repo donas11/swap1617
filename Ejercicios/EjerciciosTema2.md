@@ -3,19 +3,38 @@
 ## Ejercicio 2.1 Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema). 
 * Disponibilidades iniciales 
 
-	  |Número |  Componente | Disponibilidad |
-	  |----------------| ---------------------- | ------------------------: |
-	  |1| Web                    | 85%                         |
-	  |2| Aplicación   | 90%   |
-	  |3| Base de datos   | 99.9%   |
-	  |4| DNS   | 98%   |
-	  |5| Cortafuegos   | 85%   |
-	  |6| Switch   | 99%   |
-	  |7| centro de datos   | 99.99%   |
-	  |8| Proveedor de Servicios de Internet   | 95%   |
+<table summary="Disponibilidad del sistema">
+  <thead>
+    <tr>
+      <th scope="col">Número</th>
+      <th scope="col">Componente</th>
+      <th scope="col">Disponibilidad</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Table data 1</td>
+      <td>Table data 2</td>
+    </tr>
+  
+
+
+	
+	 <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
+	   <tr><td>2 </td><td> Aplicación   </td><td> 90% </td> </tr>
+	   <tr><td>3 </td><td> Base de datos   </td><td>99.9% </td> </tr>
+	   <tr><td>4 </td><td> DNS   </td><td> 98%  </td> </tr>
+	   <tr><td>5 </td><td> Cortafuegos   </td><td> 85% </td> </tr>
+	   <tr><td>6 </td><td> Switch   </td><td> 99% </td> </tr>
+	   <tr><td>7</td><td> centro de datos  </td><td> 99.99%  </td> </tr>
+	   <tr><td>8</td><td> Proveedor de Servicios de Internet  </td><td> 95% </td> </tr>
+
+</tbody>
+</table>
 
  	* Disponibilidad del servidor :  
-		As = Ac~1~  * Ac~2~  * Ac~3~  * Ac~4~  * Ac~5~  * Ac~6~  * Ac~7~ * Ac~8~ 
+		As = Ac<sub>1</sub>  * Ac~2~  * Ac~3~  * Ac~4~  * Ac~5~  * Ac~6~  * Ac~7~ * Ac~8~ 
 		As = 85% * 90% * 99.9% * 98% * 85% * 99% * 99.99% * 95% = 59.87%
 
 * Con 2 elementos en cada subsistema 
