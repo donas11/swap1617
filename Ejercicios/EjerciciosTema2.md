@@ -17,11 +17,7 @@
       <td>Table data 1</td>
       <td>Table data 2</td>
     </tr>
-  
-
-
-	
-	 <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
+     <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
 	   <tr><td>2 </td><td> Aplicación   </td><td> 90% </td> </tr>
 	   <tr><td>3 </td><td> Base de datos   </td><td>99.9% </td> </tr>
 	   <tr><td>4 </td><td> DNS   </td><td> 98%  </td> </tr>
