@@ -84,7 +84,7 @@
 * Oracle ADF
 
 ## Ejercicio 2.3: ¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas. ...¡o recordar cómo usarlas! 
-* __**Linux**__
+* **Linux**
 	* **top** Esta orden proporciona una visión continuada de la actividad del procesador en tiempo real, muestra las tareas que más uso hacen de la CPU, y tiene una interfaz interactiva para manipular procesos. 
 	* **mpstat** Muestra estadísticas del procesador (o procesadores) del sistema junto con la media global de todos los datos mostrados. Permite el uso de parámetros para definir la cantidad de tiempo entre cada toma de datos y el número de informes que se desean
 	* **vmstat** se puede encontrar en la mayoría de los sistemas operativos UNIX. Sirve para supervisar el sistema mostrando información de memoria pero también acerca de procesos, E/S y CPU. 	
@@ -92,12 +92,12 @@
 	* **sysstat** 
 		* El comando ***sar*** muestra las estadísticas de todo el sistema red, disco, memoria y procesador. y el comando 
 		*  El comando ***iostat*** para informar las estadísticas de entrada y salida de disco, y para generar medidas de rendimiento, uso, longitudes de cola, tasas de transacciones y tiempo de servicio.
-* __**Windows**__
-		* Administrador de tareas
-		* Monitor de rendimiento
-* __**OS-X**__
-		* Monitor de Actividad del sistema
-		* iStat
+* **Windows**
+	* Administrador de tareas
+	* Monitor de rendimiento
+* **OS-X**
+	* Monitor de Actividad del sistema
+	* iStat
 
 ## Ejercicio 2.4: Buscar ejemplos de balanceadores software y hardware(productos comerciales). Buscar productos comerciales para servidores de aplicaciones. Buscar productos comerciales para servidores de almacenamiento. 
 * __**Balanceadores software**__
