@@ -3,7 +3,7 @@
 ## Ejercicio 2.1 Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema). 
 
 * Disponibilidades iniciales 
-	<table summary="Disponibilidad del sistema">
+	<table summary="Disponibilidad del sistema inicial">
 	 	<thead>
 			<tr>
 			<th scope="col">Número</th>
@@ -12,10 +12,6 @@
 		   </tr>
 	       </thead>
 	       <tbody>
-		<tr>
-		  <td>Table data 1</td>
-		  <td>Table data 2</td>
-		</tr>
 		 <tr> <td>1</td><td>Web </td><td> 85% </td></tr>
 		   <tr><td>2 </td><td> Aplicación   </td><td> 90% </td> </tr>
 		   <tr><td>3 </td><td> Base de datos   </td><td>99.9% </td> </tr>
@@ -29,47 +25,55 @@
 
 
  	* Disponibilidad del servidor :  
-		As = Ac<sub>1</sub>  x Ac<sub>2</sub>  x Ac<sub>3</sub>  x Ac<sub>4</sub>  x Ac<sub>5</sub>  x Ac<sub>6</sub>  x Ac<sub>7</sub> x Ac<sub>8</sub>
-		
-		As = 85% x 90% x 99.9% x 98% x 85% x 99% x 99.99% x 95% = 59.87%
+		* As = Ac<sub>1</sub>  x Ac<sub>2</sub>  x Ac<sub>3</sub>  x Ac<sub>4</sub>  x Ac<sub>5</sub>  x Ac<sub>6</sub>  x Ac<sub>7</sub> x Ac<sub>8</sub>
+		* As = 85% x 90% x 99.9% x 98% x 85% x 99% x 99.99% x 95% = 59.87%
 
 * Con 2 elementos en cada subsistema 
-
-	  |Número |  Componente | Disponibilidad |
-	  |----------------| ---------------------- | ------------------------: |
-	  |1| Web                    | 97.75%                         |
-	  |2| Aplicación   | 99%   |
-	  |3| Base de datos   | 99.9999%   |
-	  |4| DNS   | 99.96%   |
-	  |5| Cortafuegos   | 97.75%   |
-	  |6| Switch   | 99.99%   |
-	  |7| centro de datos   | 99.99%   |
-	  |8| Proveedor de Servicios de Internet   | 99.75%   |
+	
+	<table summary="Disponibilidad del sistema con 2 réplicas">
+	 	<thead>
+			<tr>
+			<th scope="col">Número</th>
+			<th scope="col">Componente</th>
+		   <th scope="col">Disponibilidad</th>
+		   </tr>
+	       </thead>
+	       <tbody>
+		 <tr> <td>1</td><td>Web </td><td> 97.75 </td></tr>
+		   <tr><td>2 </td><td> Aplicación   </td><td>99%</td> </tr>
+		   <tr><td>3 </td><td> Base de datos   </td><td> 99.9999% </td> </tr>
+		   <tr><td>4 </td><td> DNS   </td><td> 99.96% </td> </tr>
+		   <tr><td>5 </td><td> Cortafuegos   </td><td>97.75% </td> </tr>
+		   <tr><td>6 </td><td> Switch   </td><td> 99.99% </td> </tr>
+		   <tr><td>7</td><td> centro de datos  </td><td> 99.99%  </td> </tr>
+		   <tr><td>8</td><td> Proveedor de Servicios de Internet  </td><td> 99.75% </td> </tr>
+	      </tbody>
+	</table>
 
  	* Disponibilidad del servidor :  
-		As = Ac~1~  * Ac~2~  * Ac~3~  * Ac~4~  * Ac~5~  * Ac~6~  * Ac~7~ * Ac~8~ 
-		As = 97.75% * 99% * 99.9999% * 99.96% * 97.75% * 99.99% * 99.99% * 99.75% = 94.3%
-		A~(1->2)mejora~=34.43 %
+		* As = Ac<sub>1</sub>  x Ac<sub>2</sub>  x Ac<sub>3</sub>  x Ac<sub>4</sub>  x Ac<sub>5</sub>  x Ac<sub>6</sub>  x Ac<sub>7</sub> x Ac<sub>8</sub> 
+		* As = 97.75% x 99% x 99.9999% x 99.96% x 97.75% x 99.99% x 99.99% x 99.75% = 94.3%
+		* A<sub>(1->2)mejora</sub>=34.43 %
 		
 
 * Con 3 elementos en cada subsistema 
 	* En cada subsistema (General)
-	As = Ac~n-1~ + ( (1 – Ac~n-1~) * Ac~n~ )
-	As = Ac~1~ + ( (1 – Ac~1~) * Ac~2~ )
+		* As = Ac<sub>n-1</sub> + ( (1 – Ac<sub>n-1</sub>) * Ac<sub>n</sub> )
+		* As = Ac<sub>1</sub> + ( (1 – Ac<sub>1</sub>) * Ac<sub>2</sub> )
 	* En cada subsistema (específico) 
-	As~3web~=97.75% + ((1 -97.75%) *85%)=99.6625%
-	As~3app~=99% + ((1 -99%) *90%)=99.9%
-	As~3BD~=99.9999% +( (1 -99.9999%) *99.9%)=99.9999999%
-	As~3DNS~=99.96% + ((1 -99.96%) *98%)=99.9992%
-	As~3FireWall~=97.75% +( (1 -97.75%) *85%)=99.6625%
-	As~3Switch~=99.99% + ((1 -99.99%) *99%)= 99.9999%	
-	As~3DataCenter~=99.99%
-	As~3ISP~=99.75% + ((1 -99.75%) *95%)=99.875%		
+		* As<sub>3web</sub>=97.75% + ((1 -97.75%) x 85%)=99.6625%
+		* As<sub>3app</sub>=99% + ((1 -99%) x 90%)=99.9%
+		* As<sub>3BD</sub>=99.9999% +( (1 -99.9999%) x 99.9%)=99.9999999%
+		* As<sub>3DNS</sub>=99.96% + ((1 -99.96%) x 98%)=99.9992%
+		* As<sub>3FireWall</sub>=97.75% +( (1 -97.75%) x 85%)=99.6625%
+		* As<sub>3Switch</sub>=99.99% + ((1 -99.99%) x 99%)= 99.9999%	
+		* As<sub>3DataCenter</sub>=99.99%
+		* As<sub>3ISP</sub>=99.75% + ((1 -99.75%) x 95%)=99.875%		
 	* En Total
-	As~3Total~ =99.6625% * 99.9% * 99.9999999% * 99.9992% * 99.6625% * 99.9999% * 99.99% * 99.9875%	
-	As~3Total~=99.2035%
-	A~(1->3)mejora~=39.3335%
-	A~(2->3)mejora~=4.9035 %
+		* As<sub>3Total</sub> =99.6625% x 99.9% x 99.9999999% x 99.9992% x 99.6625% x 99.9999% x 99.99% x 99.9875%	
+		* As<sub>3Total</sub>=99.2035%
+		* A<sub>(1->3)mejora</sub>=39.3335%
+		* A<sub>(2->3)mejora</sub>=4.9035 %
 
 
 ##  Ejercicio 2.2: Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad. Como ejemplo, examina [PM2](https://github.com/Unitech/pm2) que sirve para administrar clústeres de NodeJS. 
