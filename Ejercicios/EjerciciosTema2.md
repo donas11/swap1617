@@ -101,6 +101,8 @@
 
 ## Ejercicio 2.4: Buscar ejemplos de balanceadores software y hardware(productos comerciales). Buscar productos comerciales para servidores de aplicaciones. Buscar productos comerciales para servidores de almacenamiento. 
 * __**Balanceadores software**__
+	* Pound
+	* Pen
 * __**Balanceadores hardware**__
 	* RadWare
 	* Fortinet
@@ -133,3 +135,6 @@ ___
 16. [RadWare](https://www.radware.com/products/alteon/)
 17. [Fortinet](https://www.fortinet.com/products/application-delivery-controllers/fortiadc.html)
 18. [Zevenet](https://www.zevenet.com/products/enterprise/hardware/)
+19. [Pound](http://www.apsis.ch/pound)
+20. [Pen](http://siag.nu/pen/)	
+21. [KEMP](http://www.gti.es/es-es/Neovalia/Paginas/Fabricantes/kemp.aspx)

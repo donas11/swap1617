@@ -1,3 +1,17 @@
+
+#Desactivación del cron 
+En la práctica anterior teníamos activado la ejecución rutinaria de copiar el contenido de los archivos del servidor "activo" a un servidor "suplente" para hacer las comprobaciones de balanceos de cargas lo desactivamos comentando la linea en el cron
+
+~~~
+crontab -e
+~~~
+
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/0.png)
+
+#Instalación en contenedores Ubuntu
+## Nginx
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/1.png)
+
 importamos la clave del repositorio
 ~~~
 cd /tmp/
@@ -11,11 +25,55 @@ añadimos el repositorio
 echo "deb http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list
 echo "deb-src http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list
 ~~~
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/2.png)
 actualizamos los repositorios
 ~~~
 apt-get update
 ~~~
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/3.png)
 instalamos nginx
 ~~~
 apt-get install nginx
+~~~
+
+## Haproxy
+Instalamos Haproxy
+~~~
+apt-get install haproxy
+~~~
+
+## Lighty
+~~~
+apt-get install lighttpd
+~~~
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/4.jpg)
+
+
+#Instalación contenedor específico
+##nginx
+Obtenemos la imagen de nginx
+~~~
+sudo docker pull nginx
+~~~
+
+Creamos un contenedor de nginx
+
+~~~
+sudo docker run -d -i -t --name Balanceadornginx  nginx  bash
+~~~
+ya solo nos queda acceder 
+
+~~~
+sudo docker attach Balanceadornginx
+~~~
+
+## Haproxy
+Obtenemos la imagen de haproxy
+~~~
+sudo docker pull haproxy
+~~~
+
+Creamos un contenedor de haproxy
+~~~
+sudo docker run -d -i -t --name BalanceadorHaproxy haproxy bash
 ~~~
