@@ -42,7 +42,8 @@ Instalamos Haproxy
 apt-get install haproxy
 ~~~
 
-## Lighty
+## Lighttpd
+Instalamos Lighttpd
 ~~~
 apt-get install lighttpd
 ~~~
