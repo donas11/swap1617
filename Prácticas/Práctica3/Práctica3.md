@@ -58,11 +58,10 @@ service nginx restart
 
 <table summary="Pruebas Apache Benchmark con Nginx y Haproxy">
 	 	<thead>
-			<tr>
-			
-		   <th scope="col"></th>
-		   <th scope="col">Nginx</th>
-		   <th scope="col">Haproxy</th>
+		<tr>
+<th scope="col"></th>
+<th scope="col">Nginx</th>
+<th scope="col">Haproxy</th>
 		   </tr>
 	       </thead>
 	       <tbody>
@@ -106,13 +105,12 @@ service lighttpd restart
 
 <table summary="Pruebas Apache Benchmark con Nginx y Haproxy">
 	 	<thead>
-			<tr>
-			
-		   <th scope="col"></th>
-		   <th scope="col">Nginx</th>
-		   <th scope="col">Haproxy</th>
-		   <th scope="col">lighttpd</th>
-		   </tr>
+		<tr>	
+<th scope="col"></th>
+<th scope="col">Nginx</th>
+<th scope="col">Haproxy</th>
+<th scope="col">lighttpd</th>
+	   </tr>
 	       </thead>
 	       <tbody>
 		 <tr> 
