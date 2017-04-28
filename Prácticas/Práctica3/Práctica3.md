@@ -19,7 +19,7 @@ service nginx restart
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/5.png)
 
-#Configurar una máquina e instalarle el haproxy como balanceador de carga
+# Configurar una máquina e instalarle el haproxy como balanceador de carga
 
 ## Configuramos archivo de configuración
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/10.jpg)
@@ -104,21 +104,20 @@ service lighttpd restart
 ## Comparación
 
 <table summary="Pruebas Apache Benchmark con Nginx y Haproxy">
-	 	<thead>
+<thead>
 		<tr>	
 <th scope="col"></th>
 <th scope="col">Nginx</th>
 <th scope="col">Haproxy</th>
 <th scope="col">lighttpd</th>
 	   </tr>
-	       </thead>
-	       <tbody>
+</thead>
+<tbody>
 		 <tr> 
 <th>Time taken for tests:</th>
 <td>0.159 seconds</td>
 <td> 0.149 seconds </td>
 <td> 0.171 seconds </td>
 		</tr>
-		  
-	      </tbody>
-	</table>
+</tbody>
+</table>
