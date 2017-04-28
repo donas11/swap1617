@@ -8,7 +8,7 @@ crontab -e
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/0.png)
 
-#Instalación en contenedores Ubuntu
+# Instalación en contenedores Ubuntu
 ## Nginx
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/1.png)
 
@@ -49,8 +49,8 @@ apt-get install lighttpd
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/4.jpg)
 
 
-#Instalación contenedor específico
-##nginx
+# Instalación contenedor específico
+## nginx
 Obtenemos la imagen de nginx
 ~~~
 sudo docker pull nginx
