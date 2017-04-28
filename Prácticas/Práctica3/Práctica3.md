@@ -1,5 +1,5 @@
 
-#Configurar una máquina e instalarle el nginx como balanceador de carga
+# Configurar una máquina e instalarle el nginx como balanceador de carga
 ## Configuramos los dos archivos de configuración
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/3.png)
@@ -12,7 +12,7 @@
 ~~~
 service nginx restart
 ~~~
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/6.png)
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/6.jpg)
 
 ## Comprobamos que el balanceador funciona bien
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/4.png)
@@ -37,16 +37,16 @@ service nginx restart
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/8.jpg)
 
 
-#Someter a la granja web a una alta carga, teniendo primero nginx y después haproxy. 
+# Someter a la granja web a una alta carga, teniendo primero nginx y después haproxy. 
 
-##nginx
+## nginx
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/9_1.jpg)
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/9_2.jpg)
 
 
-##Haproxy
+## Haproxy
 
 
 ![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/10.jpg)
@@ -64,19 +64,19 @@ service nginx restart
 <th scope="col">Haproxy</th>
 		   </tr>
 	       </thead>
-	       <tbody>
+<tbody>
 		 <tr> 
 <th>Time taken for tests:</th>
 <td>0.159 seconds</td>
 <td> 0.149 seconds </td>
 		</tr>
 		  
-	      </tbody>
-	</table>
+</tbody>
+</table>
 
 
 	
-#Extra - lighttpd
+# Extra - lighttpd
 
 
 ## Configuramos archivo de configuración
