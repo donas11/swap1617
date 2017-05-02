@@ -22,7 +22,7 @@ service nginx restart
 # Configurar una máquina e instalarle el haproxy como balanceador de carga
 
 ## Configuramos archivo de configuración
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/10.jpg)
+![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/11.jpg)
 
 
 ## Reiniciamos servicio
