@@ -68,7 +68,7 @@ carga posibles.
 
 ### Glosario de términos extendido
 
-###Modelo Conceptual
+### Modelo Conceptual
 
 ### Diagramas de Secuencia
 
