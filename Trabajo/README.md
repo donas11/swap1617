@@ -1,10 +1,10 @@
 En esta carpeta del repositorio estará toda la información referente al trabajo que hemos hecho.
 
-Para ver un resumen, ver [resumen.md](https://github.com/donas11/SWAP/blob/master/trabajo/resumen.md)
+Para ver un resumen, ver [Resumen.md](https://github.com/donas11/SWAP/blob/master/trabajo/Resumen.md)
 
-Para ver la memoria completa del trabajo, ver [memoria.md](https://github.com/donas11/SWAP/blob/master/trabajo/memoria.md)
+Para ver la memoria completa del trabajo, ver [Memoria.md](https://github.com/donas11/SWAP/blob/master/trabajo/Memoria.md)
 
-Para ver la presentación del trabajo, ver [Presentación.pdf](https://github.com/donas11/SWAP/blob/master/trabajo/Presentacion.pdf)
+Para ver la presentación del trabajo, ver [Presentación.pdf](https://github.com/donas11/SWAP/blob/master/trabajo/Presentación.pdf)
 
 Trabajo realizado por:
 * [Julián Cifuentes Jiménez](https://github.com/juliancifuentes95)
