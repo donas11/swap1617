@@ -1,0 +1,12 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+Options -Indexes
+IndexIgnore *.php *.html *.css *.js *.jpg *.jpge *.png *.txt *.gr
+ExpiresActive On
+ExpiresDefault A0
+# expiracion de 1 mes para archivos estaticos
+ExpiresDefault "access plus 7 day"
+ErrorDocument 404 /notFound.php
+ErrorDocument 403 /notFound.php
+ErrorDocument 500 /notFound.php
+
