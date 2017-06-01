@@ -3,7 +3,7 @@
 sudo docker import ApacheTrabajo.tar
 ~~~
 
-## lo buscamos entre las imagenes
+## lo buscamos entre las imágenes
 ~~~
 sudo docker images
 ~~~
