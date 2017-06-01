@@ -28,4 +28,12 @@ os y configurarlos con No-ip para tener una dirección en vez de una IP
 
 ![img](./imagenes/con3.png)
 
-## Ideas iniciales: conexiones de contenedores 
+## Ideas conexiones de contenedores 
+Aquí se muestran las ideas que teniamos en principio para organizar los contenedores y las conexiones entre ellos.
+### Idea Inicial de estructura 
+Nuestra idea principal era la de tener dos balanceadores uno para servidores apache y otro para las Bases de datos, pero desechamos la idea ya que no se conseguia configurar con HAProxy con varias configuraciones que se probarón
+![img](./imagenes/dockers1.png)
+
+### Idea final de la estructura 
+La Idea final fue la de Tener un balanceador de servidores, Servidores Apache y dos Bases de datos y uno con un dispositivo RAID
+![img](./imagenes/dockersfinal.png)
