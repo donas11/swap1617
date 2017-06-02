@@ -943,6 +943,7 @@ En varias ocasiones :
 
 * En las aulas de derecho 
 * En la ETSIIT
+
 En las dos ocasiones se desconecto de eduroam y se conectó a la red que habíamos creado con el Mac Book Pro, sin estar el equipo en la sala,ni remotamente cerca, la curiosidad es que siempre que ocurría había equipos de Apple en la sala
 
 ![img](./imagenes/JMac.jpg)
