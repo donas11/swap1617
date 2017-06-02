@@ -947,6 +947,7 @@ En las dos ocasiones se desconecto de eduroam y se conectó a la red que habíam
 ![img](./imagenes/JMac.jpg)
 
 La última vez que pasó produjo que borrásemos todas las redes que se crearon
+
 ![img](./imagenes/Wifis.png)
 
 
