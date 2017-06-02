@@ -940,8 +940,9 @@ btrfs subvolume delete /var/lib/docker/btrfs/subvolumes/*
 ## El VAIO Sony detecta que hay Ordenadores Apple cerca 
 En las configuraciones iniciales creamos muchos puntos de Wifi desde los distintos ordenadores y entre ellos un Mac Book Pro de Apple.
 En varias ocasiones :
-	* En las aulas de derecho 
-	* En la ETSIIT
+
+* En las aulas de derecho 
+* En la ETSIIT
 En las dos ocasiones se desconecto de eduroam y se conectó a la red que habíamos creado con el Mac Book Pro, sin estar el equipo en la sala,ni remotamente cerca, la curiosidad es que siempre que ocurría había equipos de Apple en la sala
 
 ![img](./imagenes/JMac.jpg)
