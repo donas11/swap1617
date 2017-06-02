@@ -857,7 +857,8 @@ UUID=1ee1f774:c5d0c62d:dc01f0cf:98c776a8 /dat ext2 defaults 0 0
 ![img](./imagenes/RAID1-2.png)
 
 
-### La tabla usada
+### Las tablas usadas
+~~~
   CREATE TABLE `USER`(
   USUARIO mediumint(9) NOT NULL,
   PASS binary(16) NOT NULL
@@ -895,7 +896,7 @@ CREATE TABLE DATOS(
   Pantalla varchar(10) NOT NULL,
   tiempo_acceso varchar(6) NOT NULL,
 );
-
+~~~
 
 # Anécdotas
 
