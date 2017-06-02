@@ -905,7 +905,7 @@ CREATE TABLE DATOS(
 * Creemos que era por que se había calentado por estar colocado verticalmente cuando su forma correcta es horizontal
 * El router al final sigue funcionando aunque nos diera ese pequeño susto
 
-* Actualizaciones del sistema operativo en los días anteriores a la exposición
+## Actualizaciones del sistema operativo en los días anteriores a la exposición
 * Un integrante del grupo había actualizado el kernel del sistema operativo en lo dos días anteriores, en OpenSuse, y la noche anterior le había pasado un kernel panic, pero seguía funcionando con docker, pues al día siguiente no se podían ejecutar algunos comandos, y tampoco iniciar los contenedores de docker que se tenían ya que daba un error:
 ![img](./imagenes/1.jpg)
 esto ocurre en la hora de prácticas y decidimos que cuando llegásemos a casa intentar solucionarlo de alguna forma.
