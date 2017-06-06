@@ -6,11 +6,11 @@ En la práctica anterior teníamos activado la ejecución rutinaria de copiar el
 crontab -e
 ~~~
 
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/0.png)
+![img](./imágenes/0.png)
 
 # Instalación en contenedores Ubuntu
 ## Nginx
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/1.png)
+![img](./imágenes/1.png)
 
 importamos la clave del repositorio
 ~~~
@@ -25,12 +25,12 @@ añadimos el repositorio
 echo "deb http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list
 echo "deb-src http://nginx.org/packages/ubuntu/ lucid nginx" >> /etc/apt/sources.list
 ~~~
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/2.png)
+![img](./imágenes/2.png)
 actualizamos los repositorios
 ~~~
 apt-get update
 ~~~
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/3.png)
+![img](./imágenes/3.png)
 instalamos nginx
 ~~~
 apt-get install nginx
@@ -47,7 +47,7 @@ Instalamos Lighttpd
 ~~~
 apt-get install lighttpd
 ~~~
-![img](https://github.com/donas11/swap1617/blob/master/Prácticas/Práctica3/Previo/4.jpg)
+![img](./imágenes/4.jpg)
 
 
 # Instalación contenedor específico

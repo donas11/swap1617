@@ -51,7 +51,7 @@ La idea principal para dar el servicio del servidor fue conectar todos los orden
 * Los routers que teníamos no permitían hacer la configuración o teníamos que modificar partes del hardware soldando algunas conexiones.
 * Las conexiones de uno de los portátil necesitaba un adaptador de conexiones(usb-c) a red(Gigabit Ethernet) que costaba unos 33€, esto se solucionaba conectándolo por wifi
 
-![img](./imagenes/con1.png)
+![img](./imágenes/con1.png)
 
 
 ### Segunda idea
@@ -60,7 +60,7 @@ Descartando la anterior idea, escogimos optar por una mejora de la anterior la c
 * La prueba que realizamos en clase funcionó bien, excepto a una persona con un móvil pero el sistema en sí funciono decentemente
 * Se intentó crear un servidor con DNS local para facilitar el acceso y no tener que dar una IP, pero no se obtuvieron resultados
 
-![img](./imagenes/con2.png)
+![img](./imágenes/con2.png)
 
 ### Últimas ideas
 Concluimos después de las ideas anteriores era mejor tener una direccion en vez de una IP y por eso discutimos entre las dos siguientes posiciones:
@@ -70,17 +70,17 @@ Concluimos después de las ideas anteriores era mejor tener una direccion en vez
 
 Finalmente optamos por distribuirlos y configurarlos y configurarlos con No-ip para tener una dirección en vez de una IP
 
-![img](./imagenes/con3.png)
+![img](./imágenes/con3.png)
 
 ## Ideas conexiones de contenedores 
 Aquí se muestran las ideas que teníamos en principio para organizar los contenedores y las conexiones entre ellos.
 ### Idea Inicial de estructura 
 Nuestra idea principal era la de tener dos balanceadores uno para servidores Apache y otro para las bases de datos, pero desechamos la idea ya que no se conseguía configurar con HAProxy con varias configuraciones que se probaron
-![img](./imagenes/dockers1.png)
+![img](./imágenes/dockers1.png)
 
 ### Idea final de la estructura 
 La idea final fue la de tener un balanceador de servidores, servidores Apache, dos bases de datos y uno con un dispositivo RAID
-![img](./imagenes/dockersfinal.png)
+![img](./imágenes/dockersfinal.png)
 
 ## Creamos un nuevo contenedor
 
@@ -379,7 +379,7 @@ carga posibles.
 ## Diagramas
 
 ### Diagramas de caso de uso
-![img](./imagenes/Casosdeuso.png)
+![img](./imágenes/Casosdeuso.png)
 
 
 ### Descripción extendida de los casos de usos
@@ -780,15 +780,15 @@ carga posibles.
 
 ### Diagramas de Secuencia
 #### Iniciar sesión
-![img](./imagenes/SecIS.png)
+![img](./imágenes/SecIS.png)
 #### Guardar datos
-![img](./imagenes/SecGD.png)
+![img](./imágenes/SecGD.png)
 #### Ver estadísticas
-![img](./imagenes/SecVE.png)
+![img](./imágenes/SecVE.png)
 #### Cerrar Sesión
-![img](./imagenes/SecCS.png)
+![img](./imágenes/SecCS.png)
 ### Diagrama de clases del diseño
-![img](./imagenes/Clases.png)
+![img](./imágenes/Clases.png)
 
 ## Importamos el contenedor que exportamos
 ~~~
@@ -822,31 +822,31 @@ sudo mkdir/run/media/alvarogl/swap2
 sudo mount /dev/sdb1 /run/media/alvarogl/swap1/
 sudo mount /dev/sdb2 /run/media/alvarogl/swap2/
 ~~~
-![img](./imagenes/RAID1-5.png)
+![img](./imágenes/RAID1-5.png)
 creamos, arrancamos contenedor docker y accedemos
 ~~~
 sudo docker run --nam=apache_raid --privileged -d -p 1111:80 -p 1112:443 -p 1113:22  --device /dev/sdb1/:/dev/sdb  --device /dev/sdb1/:/dev/sdc -it 11d359dad1c2 bash
 sudo docker attach apache_raid
 ~~~
-![img](./imagenes/RAID1-4.png)
+![img](./imágenes/RAID1-4.png)
 
 comprobamos los dispositivos de almacenamiento
 ~~~
 fdisk -l
 ~~~
-![img](./imagenes/RAID1-1.png)
+![img](./imágenes/RAID1-1.png)
 ~~~
 mdadm -C /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb1 /dev/sdb2
 mkfs /dev/md0
 ~~~
 
-![img](./imagenes/RAID1-3.png)
+![img](./imágenes/RAID1-3.png)
 
 
 ~~~
 mdadm --detail /dev/md0
 ~~~
-![img](./imagenes/RAID1-0.png)
+![img](./imágenes/RAID1-0.png)
 
 
 configuramos el archivo /etc/fstab
@@ -854,7 +854,7 @@ configuramos el archivo /etc/fstab
 ~~~
 UUID=1ee1f774:c5d0c62d:dc01f0cf:98c776a8 /dat ext2 defaults 0 0
 ~~~
-![img](./imagenes/RAID1-2.png)
+![img](./imágenes/RAID1-2.png)
 
 
 ### Las tablas usadas
@@ -907,13 +907,13 @@ CREATE TABLE DATOS(
 
 ## Actualizaciones del sistema operativo en los días anteriores a la exposición
 * Un integrante del grupo había actualizado el kernel del sistema operativo en lo dos días anteriores, en OpenSuse, y la noche anterior le había pasado un kernel panic, pero seguía funcionando con docker, pues al día siguiente no se podían ejecutar algunos comandos, y tampoco iniciar los contenedores de docker que se tenían ya que daba un error:
-![img](./imagenes/1.jpg)
+![img](./imágenes/1.jpg)
 esto ocurre en la hora de prácticas y decidimos que cuando llegásemos a casa intentar solucionarlo de alguna forma.
 
 * Estando haciendo pruebas y más intentando tener otras opciones por si fallan los principales ordenadores, Un compañero que acaba de hacer un examen llegaba a probar las configuraciones por si fallase algo, prueba arrancar Docker en su máquina con Antergos y se encuentra con errores también
-![img](./imagenes/2.jpg)
-![img](./imagenes/2-1.jpg)
-![img](./imagenes/3.jpg)
+![img](./imágenes/2.jpg)
+![img](./imágenes/2-1.jpg)
+![img](./imágenes/3.jpg)
 * Después de un rato se consiguen solucionar con una actualización y un reinicio del sistema
 
 * Mientras que mis compañeros preguntan en el grupo de Telegram de Docker ES por si alguno de sus miembros le ha ocurrido para poder dar solución a esos errores, empiezo a crear copias de seguridad por sí, ocurriese algo, que no fue así
@@ -929,11 +929,11 @@ btrfs subvolume delete /var/lib/docker/btrfs/subvolumes/*
 
 * Intenta copiar la carpeta de vuelta a Docker de nuevo instalado y se queda sin espacio en disco 
 
-![img](./imagenes/5.jpg)
+![img](./imágenes/5.jpg)
 
 * Intentos de copiar archivos desde terminal
 
-![img](./imagenes/6.jpg)
+![img](./imágenes/6.jpg)
 
 * Al final consigue hacer hueco en el disco duro y arrancar los contenedores de Docker.
 
@@ -946,11 +946,11 @@ En varias ocasiones :
 
 En las dos ocasiones se desconecto de eduroam y se conectó a la red que habíamos creado con el Mac Book Pro, sin estar el equipo en la sala,ni remotamente cerca, la curiosidad es que siempre que ocurría había equipos de Apple en la sala
 
-![img](./imagenes/JMac.jpg)
+![img](./imágenes/JMac.jpg)
 
 La última vez que pasó produjo que borrásemos todas las redes que se crearon
 
-![img](./imagenes/Wifis.png)
+![img](./imágenes/Wifis.png)
 
 
 ___

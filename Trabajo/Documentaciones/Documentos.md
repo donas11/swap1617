@@ -271,3 +271,41 @@ Organizational Unit Name (eg, section) []:Killos
 Common Name (e.g. server FQDN or YOUR name) []:KillosSWAP
 Email Address []:info@killos.es
 ~~~
+
+
+
+
+
+# Bases de datos
+~~~
+CHANGE MASTER TO MASTER_HOST='alvarospunk.ddns.net',MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',MASTER_LOG_FILE='mysql-bin.000002', MASTER_LOG_POS=154,MASTER_PORT=3306;
+
+
+
+
+CHANGE MASTER TO MASTER_HOST='alvarospunk.ddns.net',MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',MASTER_LOG_FILE='mysql-bin.000010', MASTER_LOG_POS=154,MASTER_PORT=3306;
+
+	
+
+	
+
+
+CHANGE MASTER TO MASTER_HOST='donas11.hopto.org',MASTER_USER='maestro', MASTER_PASSWORD='123a123a',MASTER_LOG_FILE='mysql-bin.000009', MASTER_LOG_POS=154,MASTER_PORT=1136;
+
+
+
+
+
+CREATE USER maestro IDENTIFIED BY 123a123a';
+GRANT REPLICATION SLAVE ON *.* TO 'maestro'@'%' IDENTIFIED BY '123a123a';
+FLUSH PRIVILEGES;
+FLUSH TABLES;
+FLUSH TABLES WITH READ LOCK;
+
+
+
+
+update user set user='172.17.0.2' where user='master';
+
+~~~
+
