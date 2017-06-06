@@ -9,7 +9,9 @@
 
 
 ## Ejercicio 4.4 Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.
-
+~~~
+sudo docker run -i -t --name ZendLoadB ubuntu bash
+~~~
 
 ## Ejercicio 4.5 Probar las diferentes maneras de redirección HTTP. ¿Cuál es adecuada y cuál no lo es para hacer balanceo de carga global? ¿Por qué?
 
