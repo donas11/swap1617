@@ -121,7 +121,6 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 <table class="table table-striped">
-	<tbody>
 		<tr class="prodtable">
 			<th class="prodtable col">Balanceador</td>
 			<th class="prodtable kemp">LM-3000</th>
@@ -265,13 +264,14 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtableh"><i class="fa fa-check">&nbsp;</i></td>
 			<td class="prodtableh"><i class="fa fa-check">&nbsp;</i></td>
 		</tr>
-	</tbody>
+	
 </table>	
 
 .....
-<table >
-	<tbody>
-		<tr class="prodtable">
+
+<table>
+	  	<tbody>
+	  	<tr class="prodtable">
 			<td class="prodtable col">Balanceador</td>
 			<th class="prodtable kemp">Serie BIG-IP i10000</th>
 			<th class="prodtable kemp"> Serie BIG-IP i7000</th>
@@ -279,6 +279,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<th class="prodtable kemp"> Serie BIG-IP i4000</th>
 			<th class="prodtable kemp"> Serie BIG-IP i2000</th>
 		</tr>
+		</tbody>
 		<tr class="prodtableh pricing">
 			<td class="prodtableLh"><font>Pricing</font></td>
 			<td class="prodtableh">-</td>
@@ -384,8 +385,8 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable">N/A</td>
 			<td class="prodtable">N/A</td>			
 		</tr>
-	</tbody>
 </table>
+
 
 
 <table class="table table-striped">
