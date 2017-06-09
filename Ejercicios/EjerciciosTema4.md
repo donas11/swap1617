@@ -269,6 +269,8 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 .....
 
+
+
 <table>
 	  	<tbody>
 	  	<tr class="prodtable">
@@ -388,6 +390,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 </table>
 
 
+......
 
 <table class="table table-striped">
 	<tbody>
@@ -395,25 +398,25 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable col">Balanceador</td>
 			<th class="prodtable kemp"> TL-R480T+ </th>
 		</tr>
+	</tbody>
 		<tr class="prodtableh pricing">
 			<td class="prodtableLh"><font>Pricing</font></td>
 			<td class="prodtableh">-</td>
 		</tr>
-		<tr class="prodtable specs">
+	<tr class="prodtable specs">
 			<td class="prodtable">Specifications</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr class="prodtable">
 			<td class="prodtable col1">Application Throughput</td>
 			<td class="prodtable">N/A</td>
-			
 		</tr>
 		<tr class="prodtableh">
 			<td class="prodtableh col1">Gigabit Ethernet Ports</td>
 			<td class="prodtableh">4</td>
 			
 		</tr>
-		<tr class="prodtable">
+			<tr class="prodtable">
 			<td class="prodtable col1">10 Gigabit Fiber Ports (SFP+)</td>
 			<td class="prodtable">N/A</td>
 			
@@ -453,8 +456,12 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtableh">N/A</td>
 			
 		</tr>
-	</tbody>
+	
 </table>
+
+
+
+
 
 ## Ejercicio 4.3 Buscar información sobre los métodos de balanceo que implementan los dispositivos recogidos en el ejercicio 4.2
 
