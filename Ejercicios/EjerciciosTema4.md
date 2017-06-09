@@ -121,7 +121,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 <table>
-	  	<tbody>
+
 	  	<tr class="prod">
 			<th class="prod col">Balanceador</th>
 			<th class="prod kemp">Serie BIG-IP i10000</th>
