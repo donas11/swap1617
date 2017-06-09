@@ -266,10 +266,10 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtableh"><i class="fa fa-check">&nbsp;</i></td>
 		</tr>
 	</tbody>
-</table>
+</table>	
 
-
-<table class="table table-striped">
+.....
+<table >
 	<tbody>
 		<tr class="prodtable">
 			<td class="prodtable col">Balanceador</td>
