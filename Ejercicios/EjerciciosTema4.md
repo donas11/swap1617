@@ -267,7 +267,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 	
 </table>	
 
-.....
+
 
 
 
@@ -390,7 +390,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 </table>
 
 
-......
+
 
 <table class="table table-striped">
 	<tbody>
