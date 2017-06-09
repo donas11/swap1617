@@ -390,7 +390,72 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 
+<table>
+	<tbody>
+		<tr class="prod">
+			<th class="prod col">Balanceador</th>
+			<th class="prod kemp"> TL-R480T+ </th>
+		</tr>
 
+		<tr class="prodh pricing">
+			<td class="prodLh"><font>Pricing</font></td>
+			<td class="prodh">-</td>
+		</tr>
+	<tr class="prod specs">
+			<td class="prod">Specifications</td>
+			<td>-</td>
+		</tr>
+		<tr class="prod">
+			<td class="prod col1">Application Throughput</td>
+			<td class="prod">N/A</td>
+		</tr>
+		<tr class="prodh">
+			<td class="prodh col1">Gigabit Ethernet Ports</td>
+			<td class="prodh">4</td>
+			
+		</tr>
+			<tr class="prod">
+			<td class="prod col1">10 Gigabit Fiber Ports (SFP+)</td>
+			<td class="prod">N/A</td>
+			
+		</tr>
+		<tr class="prodh">
+			<td class="prodh col1">SSL TPS (2K Keys)</td>
+			<td class="prodh">N/A</td>
+			
+		</tr>
+		<tr class="prod">
+			<td class="prod col1">SSL TPS (1K Keys)</td>
+			<td class="prod">N/A</td>
+			
+		</tr>
+		<tr class="prodh">
+			<td class="prodh col1">Layer 4 concurrent connections</td>
+			<td class="prodh">30000</td>
+			
+		</tr>
+		<tr class="prod tmg-stop">
+			<td class="prod col1">Real Servers / Virtual Services Supported</td>
+			<td class="prod">N/A</td>
+			
+		</tr>
+		<tr class="prodh">
+			<td class="prodh col1">LoadMaster Clustering</td>
+			<td class="prodh">N/A</td>
+			
+		</tr>
+		<tr class="prod">
+			<td class="prod col1">Multi-Tenancy</td>
+			<td class="prod">N/A</td>
+			
+		</tr>
+		<tr class="prodh last-row">
+			<td class="prodh col1">Redundant Hot-Swap Power Supply</td>
+			<td class="prodh">N/A</td>
+			
+		</tr>
+	</tbody>	
+</table>
 
 
 
