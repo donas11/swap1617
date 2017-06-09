@@ -228,6 +228,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable">N/A</td>
 		</tr>
 		<tr class="prodtableh last-row">
+			<td class="prodtableh col1">Redundant Hot-Swap Power Supply</td>
 			<td class="prodtableh">N/A</td>
 			<td class="prodtableh">N/A</td>
 			<td class="prodtableh">N/A</td>
