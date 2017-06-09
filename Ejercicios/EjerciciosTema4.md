@@ -408,7 +408,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 		</tr>
 		<tr class="prodtableh">
 			<td class="prodtableh col1">Gigabit Ethernet Ports</td>
-			<td class="prodtableh">4</td>
+			<td class="prodtableh col1">4</td>
 
 		</tr>
 		<tr class="prodtable">
@@ -423,17 +423,17 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 		</tr>
 		<tr class="prodtableh">
 			<td class="prodtableh col1">SSL TPS (2K Keys)</td>
-			<td class="prodtable">N/A</td>
+			<td class="prodtableh col1">N/A</td>
 
 		</tr>
 		<tr class="prodtable">
 			<td class="prodtable col1">SSL TPS (1K Keys)</td>
-			<td class="prodtable">N/A</td>
+			<td class="prodtable col1">N/A</td>
 
 		</tr>
 		<tr class="prodtableh">
 			<td class="prodtableh col1">Layer 4 concurrent connections</td>
-			<td class="prodtableh">30000</td>
+			<td class="prodtable col1">30000</td>
 
 
 		</tr>
@@ -453,6 +453,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 		</tr>
 		<tr class="prodtableh last-row">
+			<td class="prodh col1">Redundant Hot-Swap Power Supply</td>
 			<td class="prodtableh">N/A</td>
 
 
