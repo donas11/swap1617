@@ -281,7 +281,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<th class="prodtable kemp"> Serie BIG-IP i4000</th>
 			<th class="prodtable kemp"> Serie BIG-IP i2000</th>
 		</tr>
-		</tbody>
+
 		<tr class="prodtableh pricing">
 			<td class="prodtableLh"><font>Pricing</font></td>
 			<td class="prodtableh">-</td>
@@ -388,6 +388,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable">N/A</td>
 			<td class="prodtable">N/A</td>			
 		</tr>
+		</tbody>
 </table>
 
 
@@ -399,7 +400,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable col">Balanceador</td>
 			<th class="prodtable kemp"> TL-R480T+ </th>
 		</tr>
-	</tbody>
+
 		<tr class="prodtableh pricing">
 			<td class="prodtableLh"><font>Pricing</font></td>
 			<td class="prodtableh">-</td>
@@ -457,7 +458,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtableh">N/A</td>
 			
 		</tr>
-	
+	</tbody>	
 </table>
 
 
