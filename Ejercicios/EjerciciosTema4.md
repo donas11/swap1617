@@ -307,6 +307,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtable">N/A</td>
 			
 		</tr>
+
 		<tr class="prodtableh">
 			<td class="prodtableh col1">Gigabit Ethernet Ports</td>
 			<td class="prodtableh">N/A</td>
