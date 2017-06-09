@@ -120,8 +120,6 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 
-* F5 Networks
-
 <table>
 	  	<tbody>
 	  	<tr class="prod">
@@ -243,10 +241,10 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 </table>
 
 
-* KEEP LoadMaster
+
 
 <table class="table table-striped">
-		<tr class="prodtable">
+		<tbody><tr class="prodtable">
 			<th class="prodtable col">Balanceador</th>
 			<th class="prodtable kemp">LM-3000</th>
 			<th class="prodtable kemp">LM-3400</th>
@@ -390,11 +388,10 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 			<td class="prodtableh"><i class="fa fa-check">&nbsp;</i></td>
 		</tr>
 	
-</table>	
+</tbody></table>	
 
 
 
-* TP-Link
 
 <table>
 	<tbody>
@@ -462,11 +459,6 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 		</tr>
 	</tbody>	
 </table>
-
-
-
-
-
 
 ## Ejercicio 4.3 Buscar información sobre los métodos de balanceo que implementan los dispositivos recogidos en el ejercicio 4.2
 
