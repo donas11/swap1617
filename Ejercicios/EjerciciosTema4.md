@@ -395,7 +395,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 	<tbody>
 		<tr class="prod">
 			<th class="prod col">Balanceador</th>
-			<th class="prod kemp"> TL-R480T+ </th>
+			<th class="prod col"> TL-R480T+ </th>
 		</tr>
 
 			<tr class="prodh pricing">
@@ -408,21 +408,21 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 		</tr>
 			<tr class="prod">
 			<td class="prod col1">Application Throughput</td>
-			<td class="prod">N/A</td>
+			<td class="prod col1">N/A</td>
 		</tr>
 		<tr class="prodh">
 			<td class="prodh col1">Gigabit Ethernet Ports</td>
-			<td class="prodh">4</td>
+			<td class="prodh col1">4</td>
 			
 		</tr>
 			<tr class="prod">
 			<td class="prod col1">10 Gigabit Fiber Ports (SFP+)</td>
-			<td class="prod">N/A</td>
+			<td class="prodh col1">N/A</td>
 			
 		</tr>
 			<tr class="prodh">
 			<td class="prodh col1">SSL TPS (2K Keys)</td>
-			<td class="prodh">N/A</td>
+			<td class="prodh col1">N/A</td>
 			
 		</tr>
 			<tr class="prod">
