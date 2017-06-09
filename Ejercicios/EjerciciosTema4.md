@@ -120,7 +120,45 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 
+<table>
+<tbody>
+	  	<tr class="prod">
+			<th class="prod col">Balanceador</th>
+			<th class="prod kemp">Serie BIG-IP i10000</th>
+			<th class="prod kemp"> Serie BIG-IP i7000</th>
+			<th class="prod kemp"> Serie BIG-IP i5000</th>
+			<th class="prod kemp"> Serie BIG-IP i4000</th>
+			<th class="prod kemp"> Serie BIG-IP i2000</th>
+		</tr>
 
+		<tr class="prodh pricing">
+			<td class="prodLh"><font>Pricing</font></td>
+			<td class="prodh">-</td>
+			<td class="prodh">-</td>
+			<td class="prodh">-</td>
+			<td class="prodh">-</td>
+			<td class="prodh">-</td>
+		</tr>
+		<tr class="prod specs">
+			<td class="prod">Specifications</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr class="prod">
+			<td class="prod col1">Application Throughput</td>
+			<td class="prod">N/A</td>
+			<td class="prod">N/A</td>
+			<td class="prod">N/A</td>
+			<td class="prod">N/A</td>
+			<td class="prod">N/A</td>
+			
+		</tr>
+</tbody>
+
+<table>
 
 
 
@@ -271,6 +309,15 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 		</tr>
 	
 </tbody></table>	
+
+
+
+
+
+
+
+
+
 
 
 
