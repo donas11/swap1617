@@ -389,79 +389,74 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 	
 </tbody></table>	
 
-<table class="table table-striped">
-		<tbody><tr class="prodtable">
-			<th class="prodtable col">Balanceador</th>
-			<th class="prod kemp">Serie BIG-IP i10000</th>
+
+
+<table>
+	<tbody>
+		<tr class="prod">
+			<th class="prod col">Balanceador</th>
+			<th class="prod kemp"> TL-R480T+ </th>
 		</tr>
-		<tr class="prodtableh pricing">
-			<td class="prodtableLh"><font>Pricing</font></td>
-			<td class="prodh">-</td>
+
+			<tr class="prodh pricing">
+			<td class="prodh pricing"><font>Pricing</font></td>
+			<td class="prodh pricing">-</td>
 		</tr>
-		<tr class="prodtable specs">
-			<td class="prodtable">Specifications</td>
+			<tr class="prod specs">
+			<td class="prod">Specifications</td>
 			<td>-</td>
 		</tr>
-		<tr class="prodtable">
-			<td class="prodtable col1">Application Throughput</td>
-			<td class="prodtable">N/A</td>
-
+			<tr class="prod">
+			<td class="prod col1">Application Throughput</td>
+			<td class="prod">N/A</td>
 		</tr>
-		<tr class="prodtableh">
-			<td class="prodtableh col1">Gigabit Ethernet Ports</td>
-			<td class="prodtableh col1">4</td>
-
+		<tr class="prodh">
+			<td class="prodh col1">Gigabit Ethernet Ports</td>
+			<td class="prodh">4</td>
+			
 		</tr>
-		<tr class="prodtable">
-			<td class="prodtable col1">10 Gigabit Fiber Ports (SFP+)</td>
-			<td class="prodtable col1">N/A</td>
-
+			<tr class="prod">
+			<td class="prod col1">10 Gigabit Fiber Ports (SFP+)</td>
+			<td class="prod">N/A</td>
+			
 		</tr>
-		<tr class="prodtable">
-			<td class="prodtable col1">40 Gigabit Fiber Ports (QSFP+)</td>
-			<td class="prodtable col1">N/A</td>
-	
+			<tr class="prodh">
+			<td class="prodh col1">SSL TPS (2K Keys)</td>
+			<td class="prodh">N/A</td>
+			
 		</tr>
-		<tr class="prodtableh">
-			<td class="prodtableh col1">SSL TPS (2K Keys)</td>
-			<td class="prodtableh col1">N/A</td>
-
+			<tr class="prod">
+			<td class="prod col1">SSL TPS (1K Keys)</td>
+			<td class="prod">N/A</td>
+			
 		</tr>
-		<tr class="prodtable">
-			<td class="prodtable col1">SSL TPS (1K Keys)</td>
-			<td class="prodtable col1">N/A</td>
-
+			<tr class="prodh">
+			<td class="prodh col1">Layer 4 concurrent connections</td>
+			<td class="prodh">30000</td>
+			
 		</tr>
-		<tr class="prodtableh">
-			<td class="prodtableh col1">Layer 4 concurrent connections</td>
-			<td class="prodtable col1">30000</td>
-
-
+			<tr class="prod tmg-stop">
+			<td class="prod col1">Real Servers / Virtual Services Supported</td>
+			<td class="prod">N/A</td>
+			
 		</tr>
-		<tr class="prodtable tmg-stop">
-			<td class="prodtable col1">Real Servers / Virtual Services Supported</td>
-			<td class="prodtable">N/A</td>
-
+			<tr class="prodh">
+			<td class="prodh col1">LoadMaster Clustering</td>
+			<td class="prodh">N/A</td>
+			
 		</tr>
-		<tr class="prodtableh">
-			<td class="prodtableh col1">LoadMaster Clustering</td>
-			<td class="prodtableh">N/A</td>
-				
+			<tr class="prod">
+			<td class="prod col1">Multi-Tenancy</td>
+			<td class="prod">N/A</td>
+			
 		</tr>
-		<tr class="prodtable">
-			<td class="prodtable col1">Multi-Tenancy</td>
-			<td class="prodtable">N/A</td>
-
-		</tr>
-		<tr class="prodtableh last-row">
+			<tr class="prodh last-row">
 			<td class="prodh col1">Redundant Hot-Swap Power Supply</td>
-			<td class="prodtableh">N/A</td>
-
-
+			<td class="prodh">N/A</td>
+			
 		</tr>
-	
-</tbody></table>
-
+	</tbody>	
+</table>
 
 
 
