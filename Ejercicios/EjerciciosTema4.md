@@ -125,7 +125,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 <table>
 	  	<tbody>
 	  	<tr class="prod">
-			<td class="prod col">Balanceador</td>
+			<th class="prod col">Balanceador</th>
 			<th class="prod kemp">Serie BIG-IP i10000</th>
 			<th class="prod kemp"> Serie BIG-IP i7000</th>
 			<th class="prod kemp"> Serie BIG-IP i5000</th>
@@ -247,7 +247,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 <table class="table table-striped">
 		<tr class="prodtable">
-			<th class="prodtable col">Balanceador</td>
+			<th class="prodtable col">Balanceador</th>
 			<th class="prodtable kemp">LM-3000</th>
 			<th class="prodtable kemp">LM-3400</th>
 			<th class="prodtable kemp">LM-4000</th>
@@ -399,7 +399,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 <table>
 	<tbody>
 		<tr class="prod">
-			<td class="prod col">Balanceador</td>
+			<th class="prod col">Balanceador</th>
 			<th class="prod kemp"> TL-R480T+ </th>
 		</tr>
 
