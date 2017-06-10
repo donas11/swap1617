@@ -577,7 +577,12 @@ y nos dará un resultado como este:
 
 ## Ejercicio 4.7 Buscar información sobre métodos y herramientas para implementar GSLB.
 
+Utilizar GSLB es necesario cuando hay que distribuir la infrastructura en varias localizaciones y en varios paises para mejorar la capacidad , el balanceo y es más tolerante a fallos de caídas.
 
+Existe varios métodos los más destacados:
+* DNS Proxy
+* Servicio DNS(Por dominios)
+* Geolocalización
 ___
 ***
 - - -	
@@ -594,3 +599,4 @@ ___
 11. [Medium-ordenador](https://www.pccomponentes.com/medion-erazer-p3616-d-amd-ryzen-5-1400-16gb-2tb-128gb-ssd-geforce-gtx1050ti)
 12. [Bloqueo de IPS pais iptables](https://www.redeszone.net/2015/04/21/iptables-bloquear-paises-por-rango-de-ip/)
 13. [Bloqueo de IPS pais iptables](https://www.olafrv.com/?p=786)
+14. [GSLB](https://www.a10networks.com/resources/glossary/global-server-load-balancing-gslb)
