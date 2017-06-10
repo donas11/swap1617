@@ -104,6 +104,30 @@ La idea final fue la de tener un balanceador de servidores, servidores Apache, d
 sudo docker run -d -p 80:80 -p 443:443 -p 10022:22 -i -t --name BalanceadorTrabajo nginx bash
 ~~~
 
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">80</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">443</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">10022</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+</table>
+
 * Accedemos
 
 ~~~
@@ -215,8 +239,8 @@ sudo docker images
 ~~~
 
 ~~~
-REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
-<none>					<none>				ce51d2645415		3 seconds ago		302.6 MB
+REPOSITORY                TAG	IMAGE ID		CREATED             SIZE
+<none>		<none>		ce51d2645415	3 seconds ago		302.6 MB
 ~~~
 
 ~~~
@@ -323,29 +347,156 @@ sudo docker run -d -p 1123:80 -p 1124:22 -p 1125:443 -p 1126:3306 -i -t --name A
 
 * Configuración SSH copia automática
 Creamos la clave
+
 ~~~
 keygen -t rsa
 ~~~
 
 La copiamos en la máquina principal de nuestros contenedores
+
 ~~~
-ssh# ssh-copy-id -i ~/.ssh/id_rsa 172.17.0.2
+ssh-copy-id -i ~/.ssh/id_rsa 172.17.0.2
 ~~~
 
+En los demas conetenedores tendremos un crontab así
+
+~~~
+* * * * * rsync -avz -e ssh 172.17.0.2:/var/www/ /var/www/
+~~~
+
+exceptuando los principales que copian del principal que tendrán
+
+~~~
+* * * * * rsync -avz -e ssh donas11.hopto.org:1112:/var/www/ /var/www/
+~~~
+y en algunos casos tendremos que hacer una copia distinta del archivo [DBD](./PHP/PHP/DBD.php) para que podamos distribuir las conexiones a la bases de datos podría ser algo así:
+~~~
+* * * * * rsync -avz -e ssh donas11.hopto.org:1112:/var/www/ /var/www/
+cp /var/copiaBD/DBD.php /var/www/PHP/DBD.php
+~~~
+
+# Creación contenedores Apache,MySQL
 ~~~
  sudo docker run -d -p 1111:80 -p 1112:22 -p 1113:443 -p 1114:3306 -i -t --name ApacheTrabajo ce51d2645415 bash
 ~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1111</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">11112</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1113</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1114</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
+
 ~~~
 sudo docker run -d -p 1115:80 -p 1116:22 -p 1117:443 -p 1118:3306 -i -t --name ApacheTrabajo ce51d2645415 bash
 ~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1115</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">1116</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1117</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1118</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
 ~~~
  sudo docker run -d -p 1119:80 -p 1120:22 -p 1121:443 -p 1122:3306 -i -t --name ApacheTrabajo ce51d2645415 bash
 ~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1119</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">1120</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1121</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1122</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
 ~~~
-sudo docker run -d -p 10022:22 -p 3306:3306 -i -t --name BDTrabajo mysql bash
+sudo docker run -d -p 10022:22 -p 1136:3306 -i -t --name BDTrabajo mysql bash
 ~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">10022</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1136</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
 
 
+# Creación contenedores Apache,Apache con RAID,MySQL
 
 * Importamos el contenedor que exportamos
 ~~~
@@ -366,10 +517,70 @@ REPOSITORY                TAG                 IMAGE ID            CREATED       
 ~~~
 sudo docker run -d -p 1111:80 -p 1112:22 -p 1113:443 -p 1114:3306 -i -t --name ApacheTrabajo ce51d2645415 bash
 ~~~
-* Creamos otro contenedor
+
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1111</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">1112</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1113</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1114</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
+* Creamos otro contenedor 
+
 ~~~
 sudo docker run -d -p 1115:80 -p 1116:22 -p 1117:443 -p 1118:3306 -i -t --name ApacheTrabajo2 ce51d2645415 bash
 ~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1115</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">1116</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1117</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">1118</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
 * Preparamos el sistema montando los dispositivos para conectarlos en RAID
 
 Montamos nuestros dos dispositivos de almacenamiento
@@ -382,9 +593,51 @@ sudo mount /dev/sdb2 /run/media/alvarogl/swap2/
 ![img](./imágenes/RAID1-5.png)
 creamos, arrancamos contenedor docker y accedemos
 ~~~
-sudo docker run --nam=apache_raid --privileged -d -p 1111:80 -p 1112:443 -p 1113:22  --device /dev/sdb1/:/dev/sdb  --device /dev/sdb1/:/dev/sdc -it 11d359dad1c2 bash
+sudo docker run --nam=apache_raid --privileged -d -p 1111:80 -p 1112:443 -p 1113:22  --device /dev/sdb1/:/dev/sdb  --device /dev/sdb2/:/dev/sdc -it 11d359dad1c2 bash
 sudo docker attach apache_raid
 ~~~
+
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">1111</td>
+		<td align="center" sdval="80" sdnum="3082;">80</td>
+		<td align="center">HTTP</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">1113</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1121" sdnum="3082;">1112</td>
+		<td align="center" sdval="443" sdnum="3082;">443</td>
+		<td align="center">HTTPS</td>
+	</tr>
+</table>
+
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Dispositivo Host</b></td>
+		<td align="center"><b>Dispositivo contenedor</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1119" sdnum="3082;">sdb1</td>
+		<td align="center" sdval="80" sdnum="3082;">sdb</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">sdb2</td>
+		<td align="center" sdval="22" sdnum="3082;">sdc</td>
+	</tr>
+</table>
+
+
 ![img](./imágenes/RAID1-4.png)
 
 comprobamos los dispositivos de almacenamiento
@@ -413,11 +666,39 @@ UUID=1ee1f774:c5d0c62d:dc01f0cf:98c776a8 /dat ext2 defaults 0 0
 ~~~
 ![img](./imágenes/RAID1-2.png)
 
+
+* y creamos contenedor de Mysql
+~~~
+sudo docker run -d -p 10022:22 -p 3306:3306 -i -t --name BDTrabajo mysql bash
+~~~
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup>
+	<tr>
+		<td height="17" align="center"><b>Puertos Host</b></td>
+		<td align="center"><b>Puertos contenedor</b></td>
+		<td align="center"><b>Utilizado para</b></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1120" sdnum="3082;">10022</td>
+		<td align="center" sdval="22" sdnum="3082;">22</td>
+		<td align="center">SSH</td>
+	</tr>
+	<tr>
+		<td height="17" align="center" sdval="1122" sdnum="3082;">3306</td>
+		<td align="center" sdval="3306" sdnum="3082;">3306</td>
+		<td align="center">MySQL</td>
+	</tr>
+</table>
+
+
+
 * PHPs usados como servcio
 	* [PHPS](./PHP)
 	* [Documentación](./PHP/Documentación.md)
+
+
 * Las tablas usadas
-[Archivo](./BD.sql)
+	* [Archivo](./BD.sql)
 ~~~
   CREATE TABLE `USER`(
   USUARIO mediumint(9) NOT NULL,
@@ -458,6 +739,42 @@ CREATE TABLE DATOS(
 );
 ~~~
 
+# Configuraciónes contenedores MySQL
+
+~~~
+mysql -u root -p
+~~~
+
+* En donas11.hopto.org
+
+~~~
+CREATE USER maestro IDENTIFIED BY 123a123a';
+GRANT REPLICATION SLAVE ON *.* TO 'maestro'@'%' IDENTIFIED BY '123a123a';
+FLUSH PRIVILEGES;
+FLUSH TABLES;
+FLUSH TABLES WITH READ LOCK;
+~~~
+
+~~~
+CHANGE MASTER TO MASTER_HOST='alvarospunk.ddns.net',MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',MASTER_LOG_FILE='mysql-bin.000002', MASTER_LOG_POS=154,MASTER_PORT=3306;
+~~~
+
+* En alvarospunk.ddns.net
+~~~
+CREATE USER esclavo IDENTIFIED BY 123a123a';
+GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%' IDENTIFIED BY '123a123a';
+FLUSH PRIVILEGES;
+FLUSH TABLES;
+FLUSH TABLES WITH READ LOCK;
+~~~
+
+~~~
+CHANGE MASTER TO MASTER_HOST='donas11.hopto.org',MASTER_USER='maestro', MASTER_PASSWORD='123a123a',MASTER_LOG_FILE='mysql-bin.000009', MASTER_LOG_POS=154,MASTER_PORT=1136;
+~~~
+
+
+
+
 <div id='id5' />
 <h1> Anécdotas </h1>
 </div>
@@ -471,8 +788,7 @@ CREATE TABLE DATOS(
 ![img](./imágenes/1.jpg)
 esto ocurre en la hora de prácticas y decidimos que cuando llegásemos a casa intentar solucionarlo de alguna forma.
 
-* Estando haciendo pruebas y más intentando tener otras opciones por si fallan los principales ordenadores, Un compañero que acaba de hacer un examen llegaba a probar las configuraciones por si fallase algo, prueba arrancar Docker en su máquina con Antergos y se encuentra con errores también
-![img](./imágenes/2.jpg)
+* Estando haciendo pruebas y más intentando tener otras opciones por si fallan los principales ordenadores, Un compañero que acaba de hacer un examen llegaba a probar las configuraciones por si fallase algo, prueba arrancar Docker en su máquina con Antergos y se encuentra con errores también ![img](./imágenes/2.jpg)
 ![img](./imágenes/2-1.jpg)
 ![img](./imágenes/3.jpg)
 * Después de un rato se consiguen solucionar con una actualización y un reinicio del sistema
