@@ -778,6 +778,7 @@ CHANGE MASTER TO MASTER_HOST='donas11.hopto.org',MASTER_USER='maestro', MASTER_P
 <div id='id5' />
 <h1> Anécdotas </h1>
 </div>
+
 ## ¡Hemos roto un router!
  En las configuraciones de prueba que hicimos en su momento en una de las veces que vamos reiniciar el balanceador HAPROXY, el router desconecta la Wifi
 * Creemos que era por que se había calentado por estar colocado verticalmente cuando su forma correcta es horizontal
