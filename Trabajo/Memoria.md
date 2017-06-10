@@ -51,6 +51,7 @@ Organizaciones contribuidoras apuestan por Docker:
 <div id='id3' />
 <h1> Ideas </h1>
 </div>
+
 ### Configuraciones iniciales que desechamos
 
 ### Ideas iniciales: conexiones de dispositivos 
