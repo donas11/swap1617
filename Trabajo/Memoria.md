@@ -89,11 +89,15 @@ Nuestra idea principal era la de tener dos balanceadores uno para servidores Apa
 
 ### Idea final de la estructura 
 La idea final fue la de tener un balanceador de servidores, servidores Apache, dos bases de datos y uno con un dispositivo RAID
+
 ![img](./imágenes/dockersfinal.png)
 
 <div id='id4' />
 <h1> Configuraciónes <h1>
 </div>
+
+# Creación contenedor Balanceador
+
 * Creamos un nuevo contenedor
 
 ~~~
@@ -105,6 +109,8 @@ sudo docker run -d -p 80:80 -p 443:443 -p 10022:22 -i -t --name BalanceadorTraba
 ~~~
 sudo docker attach BalanceadorTrabajo
 ~~~
+
+# Configuración contenedor Balanceador
 
 * Modificamos archivo /etc/nginx/conf.d/default.conf
 
@@ -148,6 +154,7 @@ server{
 service nginx restart
 ~~~
 
+# Creación contenedores Apache
 ~~~
 sudo docker run -d -p 1111:80 -p 1112:22 -p 1113:443 -p 1114:3306 -i -t --name ApacheTrabajo1 ubuntu bash
 ~~~
@@ -312,7 +319,7 @@ sudo docker run -d -p 1123:80 -p 1124:22 -p 1125:443 -p 1126:3306 -i -t --name A
 </table>
 
 
-
+# Configuración contenedores Apache
 
 * Configuración SSH copia automática
 Creamos la clave
@@ -406,14 +413,16 @@ UUID=1ee1f774:c5d0c62d:dc01f0cf:98c776a8 /dat ext2 defaults 0 0
 ~~~
 ![img](./imágenes/RAID1-2.png)
 
-
+* PHPs usados como servcio
+	* [PHPS](./PHP)
+	* [Documentación](./PHP/Documentación.md)
 * Las tablas usadas
 [Archivo](./BD.sql)
 ~~~
   CREATE TABLE `USER`(
   USUARIO mediumint(9) NOT NULL,
   PASS binary(16) NOT NULL
-);
+); 
 
 
 INSERT INTO USER VALUES('1',UNHEX(MD5('1'))); 
