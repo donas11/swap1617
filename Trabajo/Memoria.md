@@ -13,8 +13,8 @@
 4. [Configuraciónes](#id4)
 5. [Anecdotas](#id5)
 
-<div id='id1' />
-## Introducción
+ <div id='id1' />
+<h1> Introducción </h1>
 </div>
 Nuestro trabajo consiste en recrear las prácticas de la asignatura en un servidor casero, con el objetivo de observar a ras de circuito la importancia y el funcionamiento de las herramientas que hemos utilizado en el curso.
 
@@ -23,7 +23,7 @@ Para ello, hemos puesto a punto cuatro máquinas, las cuales tendrán como fin a
 Para ello vamos a utilizar Docker.
 
 <div id='id2' />
-# ¿Qué es Docker?
+<h1> ¿Qué es Docker? </h1>
 </div>
 Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, se puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que el código se ejecutará.
 
@@ -49,7 +49,7 @@ Organizaciones contribuidoras apuestan por Docker:
 * Paypal
 
 <div id='id3' />
-## Ideas 
+<h1> Ideas </h1>
 </div>
 ### Configuraciones iniciales que desechamos
 
@@ -92,7 +92,7 @@ La idea final fue la de tener un balanceador de servidores, servidores Apache, d
 ![img](./imágenes/dockersfinal.png)
 
 <div id='id4' />
-## Configuración
+<h1> Configuraciónes <h1>
 </div>
 * Creamos un nuevo contenedor
 
@@ -450,7 +450,7 @@ CREATE TABLE DATOS(
 ~~~
 
 <div id='id5' />
-# Anécdotas
+<h1> Anécdotas </h1>
 </div>
 ## ¡Hemos roto un router!
  En las configuraciones de prueba que hicimos en su momento en una de las veces que vamos reiniciar el balanceador HAPROXY, el router desconecta la Wifi
