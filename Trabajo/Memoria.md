@@ -740,7 +740,7 @@ CREATE TABLE DATOS(
 );
 ~~~
 
-# Configuraciónes contenedores MySQL
+# Configuraciones contenedores MySQL
 
 ~~~
 mysql -u root -p
