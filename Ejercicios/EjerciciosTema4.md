@@ -471,7 +471,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 ## Ejercicio 4.4 Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.
-Depues de probar en [Docker](./BalanceadorenDocker.md) sin exito. 
+Después de probar en [Docker](./BalanceadorenDocker.md) sin exito. 
 Instalamos en Vmware
 Descargamos iso de [zenloadbalancer](https://sourceforge.net/projects/zenloadbalancer/files/latest/download)
 	
