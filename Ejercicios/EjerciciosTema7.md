@@ -69,7 +69,7 @@
 		* Seguridad
 		* Escalabilidad
 * **RFS**-*Remote File Sharing*
-	* Es una tecnología de sistema de archivos que habilita o desabilita el  acceso a los multiples usuarios remotos, desarrollado en 1980 por AT&T y lanzado con UNIX System vesion V
+	* Es una tecnología de sistema de archivos que habilita o deshabilita el  acceso a los múltiples usuarios remotos, desarrollado en 1980 por AT&T y lanzado con UNIX System vesion V
 * **SMB**-*Server Message Block* 
 	* Es un protocolo en muchos sistemas operativos como lo son Windows y Linux para soportar operaciones de red.
 	* **Samba** es una implementación libre del protocolo de archivos compartidos de Microsoft Windows

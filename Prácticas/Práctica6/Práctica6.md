@@ -108,7 +108,7 @@ y desde el servidor creamos un archivo de prueba
 
 ![Archivo de prueba en el servidor](./imágenes/NFSarchivo.png  "archivo en el servidor")
 
-y en la máquina cliente vemos que tambien aparece:
+y en la máquina cliente vemos que también aparece:
 
 ![Archivo de prueba en el cliente](./imágenes/prueba.png  "archivo en el cliente")
 

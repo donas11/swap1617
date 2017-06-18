@@ -49,7 +49,7 @@ Usage: arping [-fqbDUAV] [-c count] [-w timeout] [-I device] [-s source] destina
   -s source : source ip address
   destination : ask for what ip address
 ~~~
-hay un error con la interfaz y no la encuetra
+hay un error con la interfaz y no la encuentra
 
 Al parecer leyendo en un articulo Zenloadbalancer debe tener dos interfaces de red. Por lo tanto se crea otra red en Docker
 ~~~
@@ -85,7 +85,7 @@ volvemos a probar instalar
 ~~~
 sh /zlb-master/zlb-debian-installer.sh
 ~~~
-sin ningun resultado
+sin ningún resultado
 
 
 

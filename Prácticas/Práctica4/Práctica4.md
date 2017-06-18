@@ -206,13 +206,13 @@ IP del firewall: 172.17.0.5
 #habilitamos en el kernel el redireccionamiento
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
-# (1) Eliminar todas las reglas (configuraci  n limpia)
+# (1) Eliminar todas las reglas (configuración limpia)
 iptables -F
 iptables -t nat -F
 iptables -X
 iptables -t nat -X
 
-# (2) Pol  tica por defecto: denegar todo el tr  fico
+# (2) Pol  tica por defecto: denegar todo el tráfico
 iptables -P INPUT DROP
 iptables -P OUTPUT DROP
 

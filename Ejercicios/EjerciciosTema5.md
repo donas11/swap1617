@@ -2,7 +2,7 @@
 
 ## Ejercicio 5.1 Buscar información sobre cómo calcular el número de conexiones por segundo. Para empezar, podéis revisar las siguientes webs: http://bit.ly/1ye4yHz http://bit.ly/1PkZbLJ
 
-La primera página nos muestra como habilitar un modulo de nginx HttpStubStatusModule que nos muestra información :
+La primera página nos muestra como habilitar un módulo de nginx HttpStubStatusModule que nos muestra información :
 
 * Número de todas las conexiones 
 * Estadísticas sobre peticiones aceptadas 
@@ -11,7 +11,7 @@ y en la Segunda página muestra como con el comando
 ~~~
 netstat | grep http | wc -l
 ~~~
-se ve el número de los multiples peticiones
+se ve el número de los múltiples peticiones
 
 Existen otras formas de hacerlo por ejemplo:
 * con Apache

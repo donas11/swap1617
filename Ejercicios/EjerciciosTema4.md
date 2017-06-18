@@ -30,7 +30,7 @@ En Fujitsu podemos encontrar los Fujitsu Server GS21
 	* GS8800
 	* GS8300
 
-Con los mainframes actuales de las dos marcas, las caracteristicas quedarían algo así:
+Con los mainframes actuales de las dos marcas, las características quedarían algo así:
 
 <table>
   <tr>
@@ -68,7 +68,7 @@ Con los mainframes actuales de las dos marcas, las caracteristicas quedarían al
   </tr>
 </table>
 
-En las paginas no podemos obtener ningun precio específico si comparamos en el mercado computadores con unos microprocesadores lo más parecido a la frecuencia de reloj del IBM z13 teniendo en cuenta la cantidad total de la memoria del mainframe de IBM puede ser de 10240GB 
+En las páginas no podemos obtener ningún precio específico si comparamos en el mercado computadores con unos microprocesadores lo más parecido a la frecuencia de reloj del IBM z13 teniendo en cuenta la cantidad total de la memoria del mainframe de IBM puede ser de 10240GB 
 
 <table>
   <tr>
@@ -471,7 +471,7 @@ En las paginas no podemos obtener ningun precio específico si comparamos en el 
 
 
 ## Ejercicio 4.4 Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.
-Después de probar en [Docker](./BalanceadorenDocker.md) sin exito. 
+Después de probar en [Docker](./BalanceadorenDocker.md) sin éxito. 
 Instalamos en Vmware
 Descargamos iso de [zenloadbalancer](https://sourceforge.net/projects/zenloadbalancer/files/latest/download)
 	
@@ -577,7 +577,7 @@ y nos dará un resultado como este:
 
 ## Ejercicio 4.7 Buscar información sobre métodos y herramientas para implementar GSLB.
 
-Utilizar GSLB es necesario cuando hay que distribuir la infrastructura en varias localizaciones y en varios paises para mejorar la capacidad , el balanceo y es más tolerante a fallos de caídas.
+Utilizar GSLB es necesario cuando hay que distribuir la infraestructura en varias localizaciones y en varios países para mejorar la capacidad , el balanceo y es más tolerante a fallos de caídas.
 
 Existe varios métodos los más destacados:
 * DNS Proxy

@@ -6,7 +6,7 @@
  	* Software de código abierto.
 	* Es modular.
 	* Alta aceptación en la red y muy popular, lo que hace fácil conseguir ayuda o soporte.
-	* Actualizaciones gracias a las contrbuciones de programadores de todo el mundo.
+	* Actualizaciones gracias a las contribuciones de programadores de todo el mundo.
 	* Es multiplataforma, es decir, se puede instalar en distintos sistemas operativos.
 	* Es capaz de dar servicio a más de un millón de visitas al día.
 	* Soporte para Seguridad SSL y TLS.
@@ -31,8 +31,8 @@
 	* Es un servidor web simple 
 * Ventajas
 	* Es pequeño.
-	* Es portatil.
-	* ES rapido y seguro (requisitos minimos de un servidor HTTP). ideal para utilización de grandes volúmenes de información estática.
+	* Es portátil.
+	* ES rápido y seguro (requisitos mínimos de un servidor HTTP). ideal para utilización de grandes volúmenes de información estática.
 ## Cherokee 
 * Utilización
 	* Servidor web basado en sockets no bloqueantes y basados en hilos,
@@ -51,7 +51,7 @@
 * Utilización
 	* es una serie de servicios para los ordenadores con Windows
 * Ventajas
- 	* facil instalación 
+ 	* fácil instalación 
 	* soporte Técnico muy bueno
 ## OpenLiteSpeed
 * Utilización
@@ -66,7 +66,7 @@
 * Utilización
 	* Es un servidor web diseñado para ser rápido,seguro, flexible y fiel a los estándares, apropiado para servidores con problemas de carga 
 * Ventajas
-	* optimizado para entornos donde la velocidad es uy importante
+	* optimizado para entornos donde la velocidad es muy importante
 	* consume menos CPU
 	* consume menos RAM
 
