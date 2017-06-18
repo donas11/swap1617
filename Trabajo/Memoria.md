@@ -693,7 +693,7 @@ sudo docker run -d -p 10022:22 -p 3306:3306 -i -t --name BDTrabajo mysql bash
 
 
 
-* PHPs usados como servcio
+* PHPs usados como servicio
 	* [PHPS](./PHP)
 	* [Documentación](./PHP/Documentación.md)
 
